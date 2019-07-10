@@ -9,4 +9,4 @@ vsb2007 Platform repository
   скорее всего контролируются системными процессами - но это не очевидно в отличии от core-dns.
 - Создал Dockerfile для http сервера - на python http.server.
 - Создал манифест web-pod.yaml, согласно дз - посмотрел все стадии запуска, случано его удалил и восстановил из команды `kubectl get pod web -o yaml`.
-- С помощью `kubectl port-forward --address 0.0.0.0 pod/web 8000:8000` подцепился к страничке из init конйтейнера.
+- С помощью `kubectl port-forward --address 0.0.0.0 pod/web 8000:8000` подцепился к страничке из init контейнера.
