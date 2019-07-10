@@ -10,7 +10,7 @@ spec:
     emptyDir: {}
   containers:
   - image: vsb2007/http-app
-    name: http-app
+    name: web
     volumeMounts:
     - name: app
       mountPath: /app
