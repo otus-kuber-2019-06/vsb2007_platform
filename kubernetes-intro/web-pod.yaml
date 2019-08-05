@@ -10,6 +10,12 @@ spec:
     emptyDir: {}
   containers:
   - image: vsb2007/http-app
+    readinessProbe: # Добавим проверку готовности
+      httpGet: # веб-сервера отдавать
+        path: /index.html # контент
+        port: 80
+    livenessProbe:
+      tcpSocket: { port: 8000 }
     name: web
     volumeMounts:
     - name: app
