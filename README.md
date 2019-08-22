@@ -47,3 +47,8 @@ vsb2007 Platform repository
 - Создали web-ingress.yaml - направили на сервис из web-svc-headless.yaml
 - Добавили доступ к kubernetes-dashboard - dashboard-ingress.yaml - пока не понятно почему надо делать обработку пути по regex
 - Создали канареечные поды (web-deploy-canary.yaml), сервис (web-svc-headless-canary.yaml) и ingress (web-ingress-canary.yaml)
+
+## ДЗ:04 - Лекция - 07
+- Установили kind и запустили кластер
+- Запустили MinIo
+- Запустили Headless Service
